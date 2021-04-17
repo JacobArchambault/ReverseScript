@@ -14,4 +14,12 @@ class Script {
 		}
 		return stringBuilder.toString();
 	}
+
+	static String reverseRecursive(String string) {
+		if (string.length() <=1) {
+			return string; 
+		} else {
+			return String.valueOf(string.charAt(string.length() - 1) + reverseRecursive(string.substring(0, string.length() - 1)));
+		}
+	}
 }
