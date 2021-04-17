@@ -1,9 +1,9 @@
 
 public class Main {
 
-	public static void main(String[] args) {
-		Script script = new Script(new StringBuilder());
-		String string = "Here is a string";
+	public static void main(final String[] args) {
+		final var script = new Script(new StringBuilder());
+		final var string = "Here is a string";
 		System.out.println("Original string: ");
 		System.out.println(string);
 		System.out.println(script.reverse(string));
